@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Monofett&display=swap');
+/* 003844
+   006C67
+   39A9DB
+   2C1320
+   3C91E6 */
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Eagle Lake', serif;
+
+}
+
+body{
+    background: linear-gradient(#39A9DB,#3C91E6,#39A9DB);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vmin;
+    background-color: #003844;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    height: 5.19860975874659765906875769875876vmin;
+}
+
+.nav > a{
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    text-decoration: none;
+    color: #39A9DB;
+    transition: .3s ease;
+    font-size: 3vmin;
+}
+
+.nav > a:hover{
+    color: #3C91E6;
+    font-size: 3.2vmin;
+}
+
+.content-box{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-box{
+    width: 120vmin;
+    height: 80vmin;
+    background-color: whitesmoke;
+    border-radius: 1.25vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vmin;
+    margin-bottom: 10vmin;
+}
+
+.thumbnail{
+    width: fit-content;
+    height: 40vmin;
+    border-radius: 1.25vmin;
+    margin-top: 2vmin;
+}
+
+.title{
+    font-size: 3vmin;
+    margin-top: 2vmin;
+}
+
+.desc{
+    font-size: 2vmin;
+    margin-top: 2vmin;
+    width: 80vmin;
+}
+
+.project-link{
+    margin-top: 2vmin;
+    font-size: 2.5vmin;
+}
+
+.screenshot-grid{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3vmin;
+    margin-top: 5vmin;
+}
+
+.grid-image{
+    width: 60%;
+    height: 25vmin;
+    border-radius: 1.25vmin;
+    position: relative;
+    left: 20%;
+
+}
+
+@media only screen and (orientation: portrait) {
+    .project-box{
+        width: 80vmin;
+    }
+    .desc{
+        width: 70vmin;
+    }
+    .thumbnail{
+        width: 70vmin;
+    }
+    .screenshot-grid{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 25vmin;
+        margin-bottom: 10vmin;
+    }
+}
